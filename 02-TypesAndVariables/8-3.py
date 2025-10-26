@@ -1,7 +1,7 @@
-# A program that prints your height both in cm and in feet and inches.
+# A program that reads the radius of a circle from the keyboard.
 
-cm = 170
-feet = cm // 30.48
-inches = (cm % 30.48) // 2.54
-
-print(f'I am {cm}cm tall, i.e. {feet} feet and {inches} inches')
+temperatureC = float(input('Enter the temperature in Celsius: '))
+temperatureF = round(temperatureC * 9/5 + 32, 2)
+temperatureK = round(temperatureC + 273.15, 2)
+print(f'The temperature in Kelvin is {temperatureK}.')
+print(f'The temperature in Fahrenheit is {temperatureF}.')

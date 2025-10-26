@@ -1,7 +1,9 @@
-# A program that reads the radius of a circle from the keyboard.
+import math
 
-temperatureC = float(input('Enter the temperature in Celsius: '))
-temperatureF = round(temperatureC * 9/5 + 32, 2)
-temperatureK = round(temperatureC + 273.15, 2)
-print(f'The temperature in Kelvin is {temperatureK}.')
-print(f'The temperature in Fahrenheit is {temperatureF}.')
+
+radius = float(input('Enter the radius of the circle: '))
+circumference = 2 * math.pi * radius
+area = math.pi * radius ** 2
+circumference = round(circumference,2)
+area = round(area,2)
+print(f'The circumference is {circumference} and the area is {area}.')
